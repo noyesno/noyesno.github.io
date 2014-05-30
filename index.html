@@ -1,9 +1,12 @@
+---
+base: http://project.noyesno.net/
+---
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <base target="_blank"/>
+    <base href="{{page.base}}"/>
     <link rel="stylesheet" type="text/css" href="asset/style.css" media="screen" />
 
     <title>~noyesno/project # Insight, Less More, Free Heart</title>
@@ -39,6 +42,10 @@ Try to demonstrate which language or which usage is fast
 Most of the time, game is just a form of math.
         </p>
 
+{% for project in site.data.projects %}
+<h2><a href="{{project.url}}">{{project.name}}</a></h2>
+<p>{{project.brief}}</p>
+{% endfor %}
 
       </section>
     </div>

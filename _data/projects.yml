@@ -1,0 +1,6 @@
+
+- name: AppSolo-php 
+  github: noyesno/AppSolo-php
+  url: AppSolo-php 
+  brief: >
+    A Tiny Single Page PHP Framework with Template Support.
